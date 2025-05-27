@@ -14,3 +14,13 @@ This project tackles the problem of identifying whether two taxi trajectories be
 - `test.py` – Testing and inference on validation/test sets
 - `main.py` – Main runner script for train / test
 - `how-to-run.md` – Quick setup and CLI usage instructions
+
+## Results 
+
+| Metric              | Value                                               |
+| ------------------- | --------------------------------------------------- |
+| Validation Accuracy | **88.6%**                                           |
+| Model Type          | **Siamese LSTM Network**                            |
+| Pair Types          | Same-driver: 1, Different-driver: 0                 |
+| Features Used       | Longitude, Latitude, Seconds since midnight, Status |
+| Best Hyperparams    | LR: 0.001, Batch Size: 64, Epochs: 30               |
